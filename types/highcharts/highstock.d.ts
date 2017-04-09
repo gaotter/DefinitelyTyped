@@ -94,6 +94,7 @@ declare namespace Highstock {
 
     interface Static extends Highcharts.Static {
         StockChart: Chart;
+		stockChart(renderTo: string | HTMLElement, options: Options, callback?: (chart: ChartObject) => void): ChartObject;
     }
 }
 
